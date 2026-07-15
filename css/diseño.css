@@ -1,0 +1,391 @@
+/* =========================
+   DISEÑO GENERAL FARMACIA
+========================= */
+
+body{
+    background-image: url("../imagen/mi_fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    font-family:'Segoe UI', Arial, sans-serif;
+    min-height:100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    background:#198754 !important;
+    padding:15px 0;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.navbar-brand{
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+.nav-link{
+    color:white !important;
+    font-weight:500;
+    margin-left:10px;
+}
+
+
+.nav-link:hover{
+    color:#d8ffe5 !important;
+}
+
+
+.usuario{
+    font-weight:600;
+}
+
+
+.cerrar{
+    color:#198754;
+    font-weight:bold;
+    border-radius:10px;
+}
+
+
+
+/* =========================
+   TITULOS
+========================= */
+
+h1,h2,h3{
+    color:#146c43;
+    font-weight:700;
+}
+
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:.3s;
+    background:white;
+}
+
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+
+
+.tarjeta{
+    min-height:220px;
+}
+
+
+
+/* =========================
+   INICIO
+========================= */
+
+.bienvenida{
+    background:white;
+    border-left:6px solid #198754;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+
+.bienvenida p{
+    color:#666;
+}
+
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-success{
+    background:#198754;
+    border:none;
+    border-radius:10px;
+}
+
+
+.btn-success:hover{
+    background:#146c43;
+}
+
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control{
+    border-radius:10px;
+}
+
+
+.form-control:focus{
+
+    border-color:#198754;
+    box-shadow:0 0 5px rgba(25,135,84,.4);
+
+}
+
+
+
+/* =========================
+   TABLAS
+========================= */
+
+.table{
+
+    background:white;
+
+}
+
+
+.table thead{
+
+    background:#198754;
+    color:white;
+
+}
+
+/* =========================
+   PANTALLA VENTAS
+========================= */
+
+.ventas-container{
+    margin-top:40px;
+}
+
+
+.titulo-ventas{
+    color:#146c43;
+    font-size:32px;
+    font-weight:700;
+}
+
+
+.caja-card{
+
+    background:white;
+    border-left:6px solid #198754;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+
+.caja-card h5{
+
+    color:#198754;
+    font-weight:700;
+
+}
+
+
+.caja-total{
+
+    font-size:30px;
+    font-weight:bold;
+    color:#146c43;
+
+}
+
+
+.form-venta{
+
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+
+.form-venta label{
+
+    font-weight:600;
+    color:#146c43;
+
+}
+
+
+.btn-venta{
+
+    background:#198754;
+    color:white;
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:bold;
+    width:100%;
+
+}
+
+
+.btn-venta:hover{
+
+    background:#146c43;
+    color:white;
+}
+
+/* =========================
+   INICIO INDEX
+========================= */
+
+.hero-farmacia{
+
+    min-height:450px;
+
+    background:
+    linear-gradient(
+        rgba(25,135,84,0.75),
+        rgba(25,135,84,0.75)
+    ),
+    url("../imagenes/farmacia.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px;
+
+}
+
+
+.hero-farmacia h1{
+
+    color:white;
+    font-size:45px;
+
+}
+
+
+.hero-farmacia p{
+
+    font-size:20px;
+
+}
+
+/* =========================
+   NUEVO HEADER
+========================= */
+
+.navbar-custom{
+    background:white;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    position:relative;
+    overflow:hidden;
+}
+
+.navbar-custom::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:240px;
+    height:110px;
+
+    background:#198754;
+
+    border-bottom-right-radius:60px;
+
+    z-index:0;
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:20px 0;
+}
+
+.logo{
+    position:relative;
+    z-index:2;
+
+    text-decoration:none;
+    font-size:30px;
+    font-weight:700;
+
+    color:white;
+}
+
+.buscador{
+    flex:1;
+    max-width:500px;
+}
+
+.buscador input{
+    width:100%;
+    border:none;
+    background:#f3f5f7;
+    padding:12px 20px;
+    border-radius:30px;
+    outline:none;
+}
+
+.usuario-box{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.btn-salir{
+    background:#198754;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:25px;
+    font-weight:600;
+}
+
+.btn-salir:hover{
+    color:white;
+    background:#146c43;
+}
+
+.menu-principal{
+    display:flex;
+    gap:35px;
+    padding-bottom:15px;
+
+    margin-left:260px;
+}
+
+.menu-principal a{
+    text-decoration:none;
+    color:#444;
+    font-weight:600;
+}
+
+.menu-principal a:hover{
+    color:#198754;
+}
